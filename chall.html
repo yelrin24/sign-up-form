@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  
+  <title>Newsletter sign-up form </title>
+
+  <link rel="stylesheet" href="style.css"> 
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+  <main>
+    <!-- Sign-up form start -->
+    <form id="form" novalidate>
+      <picture>
+        <source media="(min-width: 48rem)" srcset="illustration-sign-up-desktop.svg">
+        <source media="(max-width: 47.9rem)" srcset="illustration-sign-up-mobile.svg">
+        <img src="illustration-sign-up-mobile.svg" alt="Illustration of a signup" class="illustration-img">
+      </picture>
+
+      <div class="form-content">
+        <h1 >Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+
+        <div class="email-error">
+          <label for="email">Email address</label>
+          <span class="error-message" id="error-message"></span>
+        </div>
+        <input type="text" id="email" name="email" placeholder="email@company.com">
+
+        <button class="signup-btn">
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+
+    <!-- end -->
+    </form>
+
+    <!--message start -->
+    <div class="success-state hidden" id="success-state">
+      <img src="icon-success.svg" alt="Success check icon" class="icon-success">
+
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to <span class="user-email">ash@loremcompany.com</span>. 
+        Please open it and click the button inside to confirm your subscription.</p>
+        
+      <button class="close-btn">Dismiss message</button> 
+    </div>
+    <!--  message end -->
+
+  </main>
+</body>
+</html>
